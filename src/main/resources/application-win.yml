@@ -1,0 +1,58 @@
+server:
+#  port: 8081
+  port: 9001
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 0
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource: # 配置数据源类型
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/huwai?allowMultiQueries=true
+#    url: jdbc:mysql://localhost:3306/textbackground?characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+#    password: 123456
+    password: Tabangjiuyuan@#$321
+#    password: 183485
+
+  mail:
+    #smtp服务主机  qq邮箱则为smtp.qq.com
+    host: smtp.qq.com
+    #服务协议
+    protocol: smtp
+    # 编码集
+    default-encoding: UTF-8
+    #发送邮件的账户
+    username: 1612943563@qq.com
+    #授权码
+    password: iwrsmfxeayxtdijc
+    test-connection: true
+    port: 587
+    properties:
+      mail:
+        smtp:
+          ssl: true
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  redis:
+    host: 121.40.178.23
+    prot: 6379
+    database: 0
+    password: gagawlgwova
+    timeout: 1800000
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # 设置MyBatis-Plus全局配置
+  global-config:
+    db-config:
+      id-type: auto
+      table-prefix: t_
+

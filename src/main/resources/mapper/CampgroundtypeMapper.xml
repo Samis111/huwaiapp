@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="it.cn.mapper.CampgroundtypeMapper">
+
+    <resultMap id="BaseResultMap" type="it.cn.Strength.VO.Campgroundtype">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="typename" column="typeName" jdbcType="VARCHAR"/>
+            <result property="icon" column="icon" jdbcType="VARCHAR"/>
+            <result property="color" column="color" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,typeName,icon,
+        color
+    </sql>
+</mapper>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="it.cn.mapper.CampRecordsMapper">
+
+    <resultMap id="BaseResultMap" type="it.cn.Strength.VO.CampRecords">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="campgroundtypeid" column="campgroundtypeid" jdbcType="INTEGER"/>
+            <result property="recordsid" column="recordsid" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,campgroundtypeid,recordsid
+    </sql>
+</mapper>

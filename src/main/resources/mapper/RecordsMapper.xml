@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="it.cn.mapper.RecordsMapper">
+
+    <resultMap id="BaseResultMap" type="it.cn.Strength.VO.Records">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="campname" column="campName" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="latitude" column="latitude" jdbcType="VARCHAR"/>
+            <result property="longitude" column="longitude" jdbcType="VARCHAR"/>
+            <result property="intro" column="intro" jdbcType="VARCHAR"/>
+            <result property="photos" column="photos" jdbcType="VARCHAR"/>
+            <result property="province" column="province" jdbcType="VARCHAR"/>
+            <result property="city" column="city" jdbcType="VARCHAR"/>
+            <result property="area" column="area" jdbcType="VARCHAR"/>
+            <result property="browse" column="browse" jdbcType="VARCHAR"/>
+            <result property="createtime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="imageurl" column="imageurl" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,campName,phone,
+        address,latitude,longitude,
+        intro,photos,province,
+        city,area,browse,
+        createTime,imageurl
+    </sql>
+</mapper>
